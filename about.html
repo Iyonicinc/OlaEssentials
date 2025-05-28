@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - OLA Essentials</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background: linear-gradient(to bottom, #fbcfe8, #fce7f3);
+      font-family: Arial, sans-serif;
+    }
+    .calligraph {
+      font-family: 'Great Vibes', cursive;
+    }
+    .icon-grid img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+      cursor: default;
+    }
+    .icon-grid img:hover {
+      transform: scale(1.1);
+    }
+    .bike-delivery {
+      background: url('https://cdn-icons-png.flaticon.com/512/154/154904.png') no-repeat center/contain;
+      animation: bikeRide 3s linear infinite;
+    }
+    .factory {
+      background: url('https://cdn-icons-png.flaticon.com/512/2942/2942804.png') no-repeat center/contain;
+      animation: smokeRise 3s ease-in-out infinite;
+    }
+    .cash-flow {
+      background: url('https://cdn-icons-png.flaticon.com/512/263/263142.png') no-repeat center/contain;
+      animation: cashFlowMove 3s ease-in-out infinite;
+    }
+    .bike-delivery, .factory, .cash-flow {
+      position: relative;
+      width: 60px;
+      height: 40px;
+      margin: 0 auto 1rem;
+    }
+    .discount-badge {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background: #ef4444;
+      color: white;
+      font-size: 0.7rem;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 8px;
+      animation: discountPulse 2s ease-in-out infinite;
+      pointer-events: none;
+      user-select: none;
+    }
+    @keyframes bikeRide {
+      0% { transform: translateX(-10px); }
+      50% { transform: translateX(10px) translateY(-5px); }
+      100% { transform: translateX(-10px); }
+    }
+    @keyframes smokeRise {
+      0%, 100% { filter: brightness(1); transform: translateY(0); }
+      50% { filter: brightness(1.2); transform: translateY(-5px); }
+    }
+    @keyframes cashFlowMove {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(5px); }
+    }
+    @keyframes discountPulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.6; }
+    }
+  </style>
+</head>
+<body class="text-gray-800 scroll-smooth relative">
+
+  <!-- Sidebar Toggle Button -->
+  <button id="sidebarToggle"
+    class="fixed top-5 right-5 z-50 bg-pink-600 hover:bg-pink-700 text-white p-3 rounded-md md:hidden shadow">
+    <div class="space-y-1">
+      <div class="w-6 h-0.5 bg-white"></div>
+      <div class="w-6 h-0.5 bg-white"></div>
+      <div class="w-6 h-0.5 bg-white"></div>
+    </div>
+  </button>
+
+  <!-- Sidebar Drawer -->
+  <div id="sidebar"
+       class="fixed top-0 right-0 w-64 h-full bg-white shadow-2xl z-40 transform translate-x-full transition-transform duration-300 ease-in-out">
+    <div class="p-6 border-b flex items-center space-x-2">
+      <span class="text-2xl">✌</span>
+      <span class="text-xl font-bold text-pink-700"><span class="calligraph">OLA</span>Essentials</span>
+    </div>
+    <nav class="flex flex-col p-6 space-y-4 text-lg font-medium text-gray-700">
+      <a href="index.html" class="hover:text-pink-600">Home</a>
+      <a href="sales.html" class="hover:text-pink-600">Sales</a>
+      <a href="retail.html" class="hover:text-pink-600">Retail</a>
+      <a href="about.html" class="text-pink-700 font-bold">About</a>
+      <a href="contact.html" class="hover:text-pink-600">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Overlay -->
+  <div id="overlay" class="fixed inset-0 bg-black bg-opacity-40 hidden z-30"></div>
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full bg-white border-b shadow z-20">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <span class="text-2xl">✌</span>
+        <span class="text-xl font-bold text-pink-700"><span class="calligraph">OLA</span>Essentials</span>
+      </div>
+      <nav class="hidden md:flex space-x-6 text-lg font-medium text-gray-700">
+        <a href="index.html" class="hover:text-pink-600">Home</a>
+        <a href="sales.html" class="hover:text-pink-600">Sales</a>
+        <a href="retail.html" class="hover:text-pink-600">Retail</a>
+        <a href="about.html" class="text-pink-700 font-bold">About</a>
+        <a href="contact.html" class="hover:text-pink-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="pt-28 px-4 sm:px-6 max-w-5xl mx-auto space-y-20">
+
+    <!-- Welcome -->
+    <section class="text-center">
+      <h1 class="text-4xl font-bold text-pink-800 mb-4"> ✨About OLA Essentials</h1>
+      <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+        OLA Essentials is a growing brand offering feminine hygiene essentials with <strong>fast delivery</strong>, <strong>carefully selected quality</strong>, and <strong>fair pricing</strong>.
+        We’re committed to serving women with dignity, care, and comfort.
+      </p>
+    </section>
+
+    <!-- Values -->
+    <section class="grid md:grid-cols-3 gap-8 text-center text-gray-800">
+      <div class="bg-white shadow-md p-6 rounded-lg">
+        <div class="bike-delivery" aria-hidden="true"></div>
+        <h3 class="text-xl font-semibold mb-2">Fast Delivery</h3>
+        <p>Nationwide shipping with efficient processing — always on time.</p>
+      </div>
+      <div class="bg-white shadow-md p-6 rounded-lg">
+        <div class="factory" aria-hidden="true"></div>
+        <h3 class="text-xl font-semibold mb-2">Trusted Quality</h3>
+        <p>We work with certified producers to offer reliable, safe hygiene products.</p>
+      </div>
+      <div class="bg-white shadow-md p-6 rounded-lg relative">
+        <div class="cash-flow" aria-hidden="true">
+          <div class="discount-badge">SALE</div>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Affordable</h3>
+        <p>Designed for every woman — accessible pricing with no compromise.</p>
+      </div>
+    </section>
+
+    <!-- Payment Methods -->
+    <section class="text-center">
+      <h2 class="text-2xl font-bold text-pink-700 mb-6">💳 Accepted Payment Methods</h2>
+      <div class="flex justify-center flex-wrap gap-6 icon-grid">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" title="PayPal" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="MasterCard" title="MasterCard" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" title="Visa" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin" title="Bitcoin" />
+      </div>
+    </section>
+
+  </main>
+
+   <!-- Footer -->
+  <footer class="mt-20 text-center text-sm text-gray-600 py-6">
+    &copy; 2025 OLA Essentials. All rights reserved.
+  </footer>
+  
+  <!-- Sidebar Script -->
+  <script>
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+    const toggleBtn = document.getElementById('sidebarToggle');
+
+    toggleBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('translate-x-full');
+      overlay.classList.toggle('hidden');
+    });
+
+    overlay.addEventListener('click', () => {
+      sidebar.classList.add('translate-x-full');
+      overlay.classList.add('hidden');
+    });
+
+    sidebar.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        sidebar.classList.add('translate-x-full');
+        overlay.classList.add('hidden');
+      });
+    });
+  </script>
+</body>
+</html>

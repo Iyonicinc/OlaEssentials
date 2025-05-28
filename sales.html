@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sales - OLA Essentials</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <style>
+    .calligraph { font-family: 'Great Vibes', cursive; }
+    .normal { font-family: Arial, sans-serif; }
+  </style>
+</head>
+
+<body class="bg-pink-50 text-gray-800 normal scroll-smooth relative">
+
+  <!-- Sidebar Toggle Button -->
+  <button id="sidebarToggle"
+    class="fixed top-5 right-5 z-50 bg-pink-600 hover:bg-pink-700 text-white p-3 rounded-md md:hidden shadow">
+    <div class="space-y-1">
+      <div class="w-6 h-0.5 bg-white"></div>
+      <div class="w-6 h-0.5 bg-white"></div>
+      <div class="w-6 h-0.5 bg-white"></div>
+    </div>
+  </button>
+
+  <!-- Sidebar Drawer -->
+  <div id="sidebar"
+       class="fixed top-0 right-0 w-64 h-full bg-white shadow-2xl z-40 transform translate-x-full transition-transform duration-300 ease-in-out">
+    <div class="p-6 border-b flex items-center space-x-2">
+      <span class="text-2xl"></span>
+      <span class="text-xl font-bold text-pink-700"><span class="calligraph">OLA</span> essentials</span>
+    </div>
+    <nav class="flex flex-col p-6 space-y-4 text-lg font-medium text-gray-700">
+      <a href="index.html" class="hover:text-pink-600">Home</a>
+      <a href="sales.html" class="text-pink-700 font-bold">Sales</a>
+      <a href="retail.html" class="hover:text-pink-600">Retail</a>
+      <a href="about.html" class="hover:text-pink-600">About</a>
+      <a href="contact.html" class="hover:text-pink-600">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Overlay -->
+  <div id="overlay" class="fixed inset-0 bg-black bg-opacity-40 hidden z-30"></div>
+
+  <!-- Header -->
+  <header class="fixed top-0 w-full bg-white border-b shadow z-20">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <span class="text-2xl"></span>
+        <span class="text-xl font-bold text-pink-700"><span class="calligraph">OLA</span>
+      </div>
+      <nav class="hidden md:flex space-x-6 text-lg font-medium text-gray-700">
+        <a href="index.html" class="hover:text-pink-600">Home</a>
+        <a href="sales.html" class="text-pink-700 font-bold">Sales</a>
+        <a href="retail.html" class="hover:text-pink-600">Retail</a>
+        <a href="about.html" class="hover:text-pink-600">About</a>
+        <a href="contact.html" class="hover:text-pink-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="pt-28 px-4 sm:px-6 max-w-6xl mx-auto space-y-20">
+
+  <!-- Main Content -->
+<main class="pt-28 px-4 sm:px-6 max-w-6xl mx-auto space-y-20">
+
+  <h1 class="text-4xl font-bold text-pink-700 text-center">
+    🌸 Explore Our Feminine Hygiene Brands 🌸
+  </h1>
+
+  <section>
+    <h2 class="text-2xl font-bold text-pink-600 mb-10">Top Brand Products</h2>
+
+    <!-- PRODUCT CARDS (15 TOTAL) -->
+    <!-- Product 1 -->
+    <div class="flex flex-col lg:flex-row bg-white shadow rounded-lg p-6 mb-10">
+      <img src="https://images.ctfassets.net/6mz6gnctx58g/2ZNiVwd5cnbCjif7H0c36v/8ab633d82d6ca59f699235d0ddffb2af/Mobile_banner_with_text_2-12.png" alt="Always Ultra Thin" class="w-full lg:w-1/2 rounded mb-4 lg:mb-0 lg:mx-6">
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Always Ultra Thin</h3>
+        <p class="mb-2"><strong>Description:</strong> Trusted pads for everyday leak protection.</p>
+        <p class="mb-2"><strong>Importance:</strong> Discreet and comfortable for daily wear.</p>
+
+        <span class="inline-block bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">
+  In Stock
+</span>
+
+        <a href="https://wa.me/255700123456?text=I'm%20interested%20in%20Always%20Ultra%20Thin"
+           class="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Inquiry via WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="flex flex-col lg:flex-row-reverse bg-white shadow rounded-lg p-6 mb-10">
+      <img src="https://m.media-amazon.com/images/I/81F664XPaeL._AC_SL1500_.jpg" alt="Kotex Security Pads" class="w-full lg:w-1/2 rounded mb-4 lg:mb-0 lg:mx-6">
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Kotex Security Pads</h3>
+        <p class="mb-2"><strong>Description:</strong> Secure fit pads for reliable protection.</p>
+        <p class="mb-2"><strong>Importance:</strong> Ideal for heavy flow days and overnight use.</p>
+
+        <span class="inline-block bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">
+  In Stock
+</span>
+
+        <a href="https://wa.me/255700123456?text=I'm%20interested%20in%20Kotex%20Security%20Pads"
+           class="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Inquiry via WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="flex flex-col lg:flex-row bg-white shadow rounded-lg p-6 mb-10">
+      <img src="https://i5.walmartimages.com/asr/a2dc7ba7-adc2-4d7c-92d8-406065c7561f.acb6a2fb18e4532a22d73dc7bea90851.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="Stayfree Maxi" class="w-full lg:w-1/2 rounded mb-4 lg:mb-0 lg:mx-6">
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Stayfree Maxi</h3>
+        <p class="mb-2"><strong>Description:</strong> Soft cottony top layer with anti-leak barriers.</p>
+        <p class="mb-2"><strong>Importance:</strong> Keeps you feeling dry and secure all day.</p>
+
+        <span class="inline-block bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">
+  In Stock
+</span>
+
+        <a href="https://wa.me/255700123456?text=I'm%20interested%20in%20Stayfree%20Maxi"
+           class="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Inquiry via WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="flex flex-col lg:flex-row-reverse bg-white shadow rounded-lg p-6 mb-10">
+      <img src="https://m.media-amazon.com/images/I/619zcXBk9iS._AC_UF350,350_QL80_.jpg" alt="Carefree Acti-Fresh" class="w-full lg:w-1/2 rounded mb-4 lg:mb-0 lg:mx-6">
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Carefree Acti-Fresh</h3>
+        <p class="mb-2"><strong>Description:</strong> Everyday pantyliners with odor neutralizers.</p>
+        <p class="mb-2"><strong>Importance:</strong> Keeps you fresh and dry during light days.</p>
+
+        <span class="inline-block bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">
+  In Stock
+</span>
+
+        <a href="https://wa.me/255700123456?text=I'm%20interested%20in%20Carefree%20Acti-Fresh"
+           class="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Inquiry via WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="flex flex-col lg:flex-row bg-white shadow rounded-lg p-6 mb-10">
+      <img src="https://hips.hearstapps.com/hmg-prod/images/wh-4-25-pads-2-662acab23d63c.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*" alt="Rael Organic Cotton Pads" class="w-full lg:w-1/2 rounded mb-4 lg:mb-0 lg:mx-6">
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Rael Organic Cotton Pads</h3>
+        <p class="mb-2"><strong>Description:</strong> Made with 100% certified organic cotton.</p>
+        <p class="mb-2"><strong>Importance:</strong> Chemical-free, ideal for sensitive skin.</p>
+
+        <span class="inline-block bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">
+  In Stock
+</span>
+
+        <a href="https://wa.me/255700123456?text=I'm%20interested%20in%20Rael%20Organic%20Cotton%20Pads"
+           class="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Inquiry via WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="flex flex-col lg:flex-row-reverse bg-white shadow rounded-lg p-6 mb-10">
+      <img src="https://madesafe.org/cdn/shop/files/Natracare_MADE_SAFE_Certified_Products_dc76e31d-51e1-4c15-9fb5-09bf12438de8_1500x.png?v=1706722906" alt="Natracare Ultra Pads" class="w-full lg:w-1/2 rounded mb-4 lg:mb-0 lg:mx-6">
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Natracare Ultra Pads</h3>
+        <p class="mb-2"><strong>Description:</strong> Plastic-free and biodegradable pads.</p>
+        <p class="mb-2"><strong>Importance:</strong> Sustainable choice for eco-conscious users.</p>
+
+        <span class="inline-block bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">
+  In Stock
+</span>
+
+        <a href="https://wa.me/255700123456?text=I'm%20interested%20in%20Natracare%20Ultra%20Pads"
+           class="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Inquiry via WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Product 7 -->
+    <div class="flex flex-col lg:flex-row bg-white shadow rounded-lg p-6 mb-10">
+      <img src="https://m.media-amazon.com/images/I/81XfE-snivL._AC_UF894,1000_QL80_.jpg" alt="Lola Compact Tampons" class="w-full lg:w-1/2 rounded mb-4 lg:mb-0 lg:mx-6">
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Lola Compact Tampons</h3>
+        <p class="mb-2"><strong>Description:</strong> Compact applicator, BPA-free, and hygienic.</p>
+        <p class="mb-2"><strong>Importance:</strong> Easy to carry and safe to use.</p>
+
+
+    <span class="inline-block bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">
+  In Stock
+</span>
+
+        <a href="https://wa.me/255700123456?text=I'm%20interested%20in%20Lola%20Compact%20Tampons"
+           class="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Inquiry via WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Product 8 -->
+    <div class="flex flex-col lg:flex-row-reverse bg-white shadow rounded-lg p-6 mb-10">
+      <img src="https://target.scene7.com/is/image/Target/GUEST_6893083a-b565-4f1e-96fd-818f34d2cb6e?wid=300&hei=300&fmt=pjpeg" alt="Cora Organic Pads" class="w-full lg:w-1/2 rounded mb-4 lg:mb-0 lg:mx-6">
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Cora Organic Pads</h3>
+        <p class="mb-2"><strong>Description:</strong> Hypoallergenic pads for maximum protection.</p>
+        <p class="mb-2"><strong>Importance:</strong> Good for both body and planet.</p>
+
+        <span class="inline-block bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">
+  In Stock
+</span>
+
+        <a href="https://wa.me/255700123456?text=I'm%20interested%20in%20Cora%20Organic%20Pads"
+           class="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Inquiry via WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Product 9 -->
+    <div class="flex flex-col lg:flex-row bg-white shadow rounded-lg p-6 mb-10">
+      <img src="https://i5.walmartimages.com/asr/848ac981-b50e-4468-a291-41c481cad2e6_2.1c57dacc401baa5048b8b63d6e5a8a4e.jpeg" alt="Seventh Generation Pads" class="w-full lg:w-1/2 rounded mb-4 lg:mb-0 lg:mx-6">
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Seventh Generation Pads</h3>
+        <p class="mb-2"><strong>Description:</strong> Chlorine-free, fragrance-free pads.</p>
+        <p class="mb-2"><strong>Importance:</strong> Gentle choice for body and environment.</p>
+
+        <span class="inline-block bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">
+  In Stock
+</span>
+
+        <a href="https://wa.me/255700123456?text=I'm%20interested%20in%20Seventh%20Generation%20Pads"
+           class="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Inquiry via WhatsApp</a>
+      </div>
+    </div>
+<!-- Product 10 -->
+<div class="flex flex-col lg:flex-row-reverse bg-white shadow rounded-lg p-6 mb-10">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8NKoB6svgoSnGO31pnOWkayBuodugjN3zrk17H21WdmtVzSfueZRKwWSCve0aGCDUjtM&usqp=CAU" 
+       alt="U by Kotex Click" 
+       class="w-full lg:w-1/2 rounded mb-4 lg:mb-0 lg:mx-6">
+  <div>
+    <h3 class="text-xl font-semibold mb-2">U by Kotex Click</h3>
+    <p class="mb-2"><strong>Description:</strong> Small, easy-to-use tampons for light and regular days.</p>
+    <p class="mb-2"><strong>Importance:</strong> Designed for teens and active women.</p>
+
+    <span class="inline-block bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">
+      In Stock
+    </span>
+
+    <a href="https://wa.me/255700123456?text=I'm%20interested%20in%20U%20by%20Kotex%20Click"
+       class="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">
+      Inquiry via WhatsApp
+    </a>
+  </div>
+</div>
+
+        <a href="https://wa.me/255700123456?text=I'm%20interested%20in%20U%20by%20Kotex%20Click"
+           class="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Inquiry via WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Add more if needed to reach 15 -->
+  </section>
+</main>
+
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/254790057596?text=Hello%20Moonset,%20I%20would%20like%20to%20place%20an%20order"
+     class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full shadow-xl z-50 transition text-lg font-semibold flex items-center space-x-2"
+     target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp text-2xl"></i>
+    <span>WhatsApp</span>
+  </a>
+<!-- Footer -->
+  <footer class="mt-20 text-center text-sm text-gray-600 py-6">
+    &copy; 2025 Moonset Collections. All rights reserved.
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+    const toggleBtn = document.getElementById('sidebarToggle');
+
+    toggleBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('translate-x-full');
+      overlay.classList.toggle('hidden');
+    });
+
+    overlay.addEventListener('click', () => {
+      sidebar.classList.add('translate-x-full');
+      overlay.classList.add('hidden');
+    });
+
+    sidebar.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        sidebar.classList.add('translate-x-full');
+        overlay.classList.add('hidden');
+      });
+    });
+  </script>
+
+</body>
+</html>
