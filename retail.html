@@ -172,10 +172,34 @@
     <span>WhatsApp</span>
   </a>
 
-</body>
-</html>
+<!-- Scripts -->
+  <script>
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+    const toggleBtn = document.getElementById('sidebarToggle');
+
+    toggleBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('translate-x-full');
+      overlay.classList.toggle('hidden');
+    });
+
+    overlay.addEventListener('click', () => {
+      sidebar.classList.add('translate-x-full');
+      overlay.classList.add('hidden');
+    });
+
+    sidebar.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        sidebar.classList.add('translate-x-full');
+        overlay.classList.add('hidden');
+      });
+    });
+  </script>
 
  <!-- Footer -->
   <footer class="mt-20 text-center text-sm text-gray-600 py-6">
     &copy; 2025 OLA Essentials. All rights reserved.
   </footer>
+
+</body>
+    </html>
